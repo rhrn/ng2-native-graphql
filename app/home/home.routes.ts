@@ -5,5 +5,5 @@ export const routes = [
 ];
 
 export const components = [
-  HomeComponent
+  HomeComponent,
 ];
