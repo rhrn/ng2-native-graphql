@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common'
 import { NativeScriptModule } from 'nativescript-angular/platform';
-import { FilmsComponent } from './films.component';
+import { NativeScriptRouterModule } from 'nativescript-angular/router';
 
-import filmsRoutes from './films.routes';
+import { routes, components } from './films.routes';
 
 @NgModule({
   imports: [
     NativeScriptModule,
     CommonModule,
-    filmsRoutes,
+    NativeScriptRouterModule.forChild(routes),
   ],
   declarations: [
-    FilmsComponent,
+    ...components
   ]
 })
-export class FilmsModule{}
+export class FilmsModule {}

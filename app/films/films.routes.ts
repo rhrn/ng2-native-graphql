@@ -1,8 +1,9 @@
-import { RouterModule } from '@angular/router';
 import { FilmsComponent } from './films.component';
 
-const routes = [
+export const routes = [
   { path: '', component: FilmsComponent }
 ];
 
-export default RouterModule.forChild(routes);
+export const components = [
+  FilmsComponent,
+];
